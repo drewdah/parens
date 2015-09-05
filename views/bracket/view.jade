@@ -1,0 +1,10 @@
+link(href='/bracket.css', rel='stylesheet')
+.bracket
+    h2= bracket.name
+    each round in bracket.rounds
+        .round
+            each match in round.matches
+                ul.match
+                    each competitor in match.competitors
+                        li= competitor.name
+

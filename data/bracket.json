@@ -1,0 +1,133 @@
+{
+  "name": "My Bracket",
+  "id": "100",
+  "type": "single-elimination",
+  "rounds": [
+    {
+      "name": "Round of 8",
+      "id": "0",
+      "matches": [
+        {
+          "id": "0",
+          "competitors": [
+            {
+              "name": "Team 1",
+              "id": 1
+            },
+            {
+              "name": "Team 2",
+              "id": 2
+            }
+          ]
+        },
+        {
+          "id": "1",
+          "competitors": [
+            {
+              "name": "Team 3",
+              "id": 1
+            },
+            {
+              "name": "Team 4",
+              "id": 2
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "competitors": [
+            {
+              "name": "Team 5",
+              "id": 1
+            },
+            {
+              "name": "Team 6",
+              "id": 2
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "competitors": [
+            {
+              "name": "Team 7",
+              "id": 1
+            },
+            {
+              "name": "Team 8",
+              "id": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round of 4",
+      "id": "1",
+      "matches": [
+        {
+          "id": "0",
+          "competitors": [
+            {
+              "name": "Team 1",
+              "id": 1
+            },
+            {
+              "name": "Team 4",
+              "id": 4
+            }
+          ]
+        },
+        {
+          "id": "1",
+          "competitors": [
+            {
+              "name": "Team 5",
+              "id": 5
+            },
+            {
+              "name": "Team 8",
+              "id": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round of 2",
+      "id": "2",
+      "matches": [
+        {
+          "id": "0",
+          "competitors": [
+            {
+              "name": "Team 1",
+              "id": 1
+            },
+            {
+              "name": "Team 8",
+              "id": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Final",
+      "id": "3",
+      "matches": [
+        {
+          "id": "0",
+          "competitors": [
+            {
+              "name": "Team 1",
+              "id": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+
+
+}

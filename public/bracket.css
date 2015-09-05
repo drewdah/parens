@@ -1,0 +1,23 @@
+.bracket {
+    height:100%;
+}
+
+.round {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.match {
+    list-style: none;
+    margin: 0 0 1em 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+}
+.match li {
+    margin: 0;
+    padding: 1em;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
