@@ -1,10 +1,7 @@
 var Bracket = require('../models/bracket');
 module.exports.controller = function(app) {
-    /**
-     * a home page route
-     */
-    app.get('/view', function(req, res) {
-        // any logic goes here
+    // /bracket/ route
+    app.get('/bracket', function(req, res) {
         res.render('bracket/view', {bracket: Bracket})
     });
 

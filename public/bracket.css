@@ -4,20 +4,74 @@
 
 .round {
     display: inline-block;
-    margin-right: 10px;
     vertical-align: middle;
 }
 
 .match {
     list-style: none;
-    margin: 0 0 1em 0;
+    margin: 0 50px 10px 0;
     padding: 0;
-    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: relative;
 }
+
+.match:hover {
+    cursor: pointer;
+    border-color: #00bfff;
+}
+
+/*
+.match:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -25%;
+    border-top: 1px solid #00bfff;
+    height: 50%;
+    width: 25%;
+}
+
+.match:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -25%;
+    border-top: 1px solid #00bfff;
+    border-right: 1px solid #00bfff;
+    height: 50%;
+    width: 25%;
+}
+
+.match:nth-child(even):after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -25%;
+    border-top: 0px;
+    border-bottom: 1px solid #00bfff;
+    border-right: 1px solid #00bfff;
+    height: 50%;
+    width: 25%;
+}
+
+.round:first-of-type .match:before {
+    display: none;
+}
+
+.round .match:only-child:after {
+    display: none;
+}
+*/
+
 .match li {
     margin: 0;
-    padding: 1em;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+    height: 2em;
+    line-height: 2em;
+    width: 100px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.match li:last-of-type {
+    border-width: 0;
 }

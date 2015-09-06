@@ -3,8 +3,9 @@ link(href='/bracket.css', rel='stylesheet')
     h2= bracket.name
     each round in bracket.rounds
         .round
-            each match in round.matches
+            each match, index in round.matches
                 ul.match
                     each competitor in match.competitors
-                        li= competitor.name
-
+                        li.competitor
+                            a.name= competitor.name
+                            span.result
