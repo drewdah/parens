@@ -2,13 +2,31 @@
     list-style: none;
     margin: 0 10px 10px 0;
     padding: 0;
-    border: 1px solid #ccc;
+    border: 1px solid $light-border;
     border-radius: 3px;
-    position: relative;
 
     &:hover {
         cursor: pointer;
         border-color: $highlight-blue;
+    }
+
+    // Four matches
+    &:first-child:nth-last-child(4),
+    &:first-child:nth-last-child(4) ~ .match {
+
+    }
+
+    // Two matches
+    &:first-child:nth-last-child(2),
+    &:first-child:nth-last-child(2) ~ .match {
+        &:first-of-type {
+            top: 25%;
+        }
+    }
+
+    // One match
+    &:first-child:nth-last-child(1){
+
     }
 }
 

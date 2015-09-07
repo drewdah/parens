@@ -1,10 +1,19 @@
 // Global Styles and Variables
 $highlight-blue: #00bfff;
+$light-border: #ccc;
 
 // Reset
 html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
     box-sizing: border-box;
-    font: 12px Calibri;
+}
+
+// Content container
+.container {
+    height: 100%;
+    padding: 1em;
 }
 
 // Font and typography styles

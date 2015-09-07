@@ -1,6 +1,8 @@
+$competitor-height: 2em;
+
 .competitor {
     margin: 0;
-    height: 2em;
+    height: $competitor-height;
     width: 100px;
     border-bottom: 1px solid #ccc;
 

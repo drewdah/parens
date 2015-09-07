@@ -35,7 +35,7 @@ gulp.task('styles', function () {
 // Watch
 gulp.task('watch', function () {
     // Watch .scss files
-    gulp.watch(srcPath + 'styles/global.scss', function (event) {
+    gulp.watch(srcPath + 'styles/**/*.scss', function (event) {
         console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
         gulp.start('styles');
     });

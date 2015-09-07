@@ -1,11 +1,16 @@
-link(href='/css/global.css', rel='stylesheet')
-.bracket
+extends ../layout.jade
+
+block append title
+    | :: #{bracket.name}
+
+block content
     h2= bracket.name
-    each round in bracket.rounds
-        .round
-            each match, index in round.matches
-                ul.match
-                    each competitor in match.competitors
-                        li.competitor
-                            a.name= competitor.name
-                            span.result= "--"
+    .bracket
+        each round in bracket.rounds
+            .round
+                each match, index in round.matches
+                    ul.match
+                        each competitor in match.competitors
+                            li.competitor
+                                a.name= competitor.name
+                                span.result= "--"
