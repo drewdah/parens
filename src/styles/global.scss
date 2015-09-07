@@ -1,0 +1,17 @@
+// Global Styles and Variables
+$highlight-blue: #00bfff;
+
+// Reset
+html, body {
+    box-sizing: border-box;
+    font: 12px Calibri;
+}
+
+// Font and typography styles
+@import "typography";
+
+// Bracket
+@import "bracket/bracket";
+@import "bracket/round";
+@import "bracket/match";
+@import "bracket/competitor";

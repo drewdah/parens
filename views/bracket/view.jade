@@ -1,4 +1,4 @@
-link(href='/bracket.css', rel='stylesheet')
+link(href='/css/global.css', rel='stylesheet')
 .bracket
     h2= bracket.name
     each round in bracket.rounds
@@ -8,4 +8,4 @@ link(href='/bracket.css', rel='stylesheet')
                     each competitor in match.competitors
                         li.competitor
                             a.name= competitor.name
-                            span.result
+                            span.result= "--"

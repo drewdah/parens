@@ -1,0 +1,14 @@
+.match {
+    list-style: none;
+    margin: 0 10px 10px 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+        border-color: $highlight-blue;
+    }
+}
+
