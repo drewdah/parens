@@ -8,9 +8,10 @@ block content
     .bracket
         each round in bracket.rounds
             .round
-                each match, index in round.matches
-                    ul.match
-                        each competitor in match.competitors
-                            li.competitor
-                                a.name= competitor.name
-                                span.result= "--"
+                each match in round.matches
+                    div(class="match-group match-group-#{ round.matches.length }")
+                        ul.match
+                            each competitor in match.competitors
+                                li.competitor
+                                    a.name= competitor.name
+                                    span.result= "--"

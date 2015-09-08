@@ -1,32 +1,37 @@
 .match {
     list-style: none;
-    margin: 0 10px 10px 0;
+    margin: 0;
     padding: 0;
     border: 1px solid $light-border;
     border-radius: 3px;
+
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
 
     &:hover {
         cursor: pointer;
         border-color: $highlight-blue;
     }
+}
 
-    // Four matches
-    &:first-child:nth-last-child(4),
-    &:first-child:nth-last-child(4) ~ .match {
+.match-group {
+    position: relative;
+}
 
-    }
+.match-group-1 {
+    height: 100%;
+}
 
-    // Two matches
-    &:first-child:nth-last-child(2),
-    &:first-child:nth-last-child(2) ~ .match {
-        &:first-of-type {
-            top: 25%;
-        }
-    }
+.match-group-2 {
+    height: 50%;
+}
 
-    // One match
-    &:first-child:nth-last-child(1){
+.match-group-4 {
+    height: 25%;
+}
 
-    }
+.match-group-8 {
+    height: 12.5%;
 }
 
